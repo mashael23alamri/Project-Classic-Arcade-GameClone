@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: #003300;
+}
+
+#name{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 35px;
+}
+
+.score{
+  color:#ffffff;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #d8f3e5;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+#timer , #numofscore{
+  margin: 0 0 0 1em;
+  font-family: fantasy;
+  display: inline-block;
+}
+
+#dialog1{
+  font-family: fantasy;
+  font-size: 15px;
+  text-align: center;
+  width: calc(20% - 10px);
+  height: calc(35% - 10px);
+  border: 2px solid #408000;
+  border-radius: 5px;
+  background-color: #e0ebeb;
+}
+
+#time1{
+  margin-top: -20px;
+}
+
+#plagain{
+  color: white;
+  font-size: 20px;
+  margin-top: -15px;
+  background-color:#d8f3e5;
+}
+
+a{
+  color:#ffffff;
+}
+
+footer{
+  color:#ffffff;
+  font-family: fantasy;
+  font-size: 18px;
+
+}

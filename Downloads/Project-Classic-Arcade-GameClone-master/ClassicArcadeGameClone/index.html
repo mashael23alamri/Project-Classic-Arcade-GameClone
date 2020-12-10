@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Arcade Game Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="head">
+      <h1 id="name">Classic Arcade Game Clone</h1>
+    </header>
+    <br/>
+
+    <main>
+      <div class="score">
+        <div id="timer">
+             timer: 0:0:0
+        </div>
+        <br/>
+        <div id="numofscore">
+             <span id="score">score: 2💎</span>
+        </div>
+      </div>
+
+      <dialog id="dialog1">
+        <h1 id="win">That's Great!👏</h1>
+        <br/>
+        <p id="time1">🕒 Timer: <span id="time"></span></p>
+        <p id="score1">💎 scores:  <span id="scores"></span></p>
+        <br/>
+        <div id="playagain">
+        <button id="plagain" onclick = playagain()>Play Again💪</button>
+        </div>
+        <br/>
+      </dialog>
+
+      <script src="js/resources.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/engine.js"></script>
+
+    </main>
+
+    <hr/>
+    <footer class="container-fluid">
+     <div id="footinfor">
+       <p>Udacity Front-End Web Developer</p>
+       <p>Project: Classic Arcade Game Clone, 21-Oct-2019 by Mashael Al-amri</p>
+        <a href="https://github.com/mashael23alamri">My github</a>
+     </div>
+    </footer>
+
+</body>
+</html>
