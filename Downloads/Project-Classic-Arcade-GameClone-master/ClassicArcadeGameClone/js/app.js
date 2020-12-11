@@ -16,7 +16,7 @@ function counttimer() {
     minute = Math.floor((totalSeconds - hour*3600)/60);
     seconds = totalSeconds - (hour*3600 + minute*60);
    //Using getElementById time mode in page index and time format..
-   document.getElementById("timer").innerHTML =hour + ":" + minute + ":" + seconds;
+   document.getElementById("timer").innerHTML ="Timer: " +hour + ":" + minute + ":" + seconds;
 }
 
  //stop the time ..
@@ -201,12 +201,16 @@ function getDistance(object1 , object2) {
    //dialog ..
    let dialog = document.getElementById("dialog1");
 
+   document.getElementById("win").innerHTML = "WOW 🤩 ";
+
    //Get the final time..
    let finaltime = document.getElementById("timer").innerHTML ;
-   document.getElementById("time").innerHTML ="Timer: "+ finaltime + "🕒 ";
+   document.getElementById("time").innerHTML =""+ finaltime + "🕒 ";
 
    //Get the final number of attempts
    document.getElementById("scores").innerHTML ="scores: "+ score+ "💎";
+
+   document.getElementById("plagain").innerHTML ="Play Again💪";
 
    //Show Dialog..
    dialog.showModal();
@@ -218,15 +222,15 @@ function getDistance(object1 , object2) {
      //dialog ..
      let dialog = document.getElementById("dialog1");
 
-     let loss =  document.getElementById("win").innerHTML;
      document.getElementById("win").innerHTML = "OOH 😣, Game Over ";
 
      //Get the final time..
      let finaltime = document.getElementById("timer").innerHTML ;
-     document.getElementById("time").innerHTML =" "+ finaltime;
+     document.getElementById("time").innerHTML ="" + finaltime + "🕒 ";
 
      //Get the final number of attempts
-     document.getElementById("scores").innerHTML =" "+ score;
+     document.getElementById("scores").innerHTML ="scores: "+ score+ "💎";
+     document.getElementById("plagain").innerHTML ="Play Again💪";
 
      //Show Dialog..
      dialog.showModal();
